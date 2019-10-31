@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<settings_notification_desc>Show infestation notifications</settings_notification_desc>
+	<settings_notification_tip>Show infestation notifications letters when the incident starts.</settings_notification_tip>
+
+	<settings_allowhivemapgen_desc>Allow hives in map generation</settings_allowhivemapgen_desc>
+	<settings_allowhivemapgen_tip>When you start a new game, this setting will allow map generation to create insect hives on the map.</settings_allowhivemapgen_tip>
+
+	<settings_allowhivespawncolony_desc>Allow hive to spawn in colony if no caves found</settings_allowhivespawncolony_desc>
+	<settings_allowhivespawncolony_tip>If the infestation starts and looks for a place to spawn and can't find a dark cave with the distance you set, this setting will kick in and it allow them to spawn within your territory.</settings_allowhivespawncolony_tip>
+
+	<settings_spawnadditionalinsects_desc>Spawn additional insects</settings_spawnadditionalinsects_desc>
+	<settings_spawnadditionalinsects_tip>When an infestation starts, it will only bring a queen that lays eggs. Enable this setting to bring in additional insects with her. The number of insects is dependent on parameter points.</settings_spawnadditionalinsects_tip>
+
+	<settings_maxparampointsinf_desc>Infestations max parameter points: </settings_maxparampointsinf_desc>
+	<settings_maxparampointsinf_tip>When you enable additional insect spawns, this setting will determine how many the game is allowed to spawn in infestation incidents. Higher points brings in more bugs.</settings_maxparampointsinf_tip>
+
+	<settings_maxparampointsdeep_desc>Deep drill infestations max parameter points: </settings_maxparampointsdeep_desc>
+	<settings_maxparampointsdeep_tip>When you enable additional insect spawns, this setting will determine how many the game is allowed to spawn in Deep drill infestation incidents. Higher points brings in more bugs.</settings_maxparampointsdeep_tip>
+
+	<settings_allowharvestjob_desc>Allow insect harvest jobs</settings_allowharvestjob_desc>
+	<settings_allowharvestjob_tip>Allow insects to perform harvest job duties such as cutting trees and bushes. Harvestable items can be filtered with the targeting menu.</settings_allowharvestjob_tip>
+
+	<settings_allowsapperjob_desc>Allow insect sapper jobs</settings_allowsapperjob_desc>
+	<settings_allowsapperjob_tip>Allow insects to dig through walls to get to food if no doors found to attack.</settings_allowsapperjob_tip>
+
+	<settings_allowhuntingjob_desc>Allow insect hunting jobs</settings_allowhuntingjob_desc>
+	<settings_allowhuntingjob_tip>Allow insects to perform hunting jobs. Prey can be filtered with the targeting menu.</settings_allowhuntingjob_tip>
+
+	<settings_maxmapgenhives_desc>Max hives in map generation: </settings_maxmapgenhives_desc>
+	<settings_maxmapgenhives_tip>This is the maximum number of hives allowed to spawn in map generation if you have it enabled.</settings_maxmapgenhives_tip>
+
+	<settings_maxinsectsmap_desc>Max insects per map: </settings_maxinsectsmap_desc>
+	<settings_maxinsectsmap_tip>This is the maximum number of insects allowed to spawn in a map.</settings_maxinsectsmap_tip>
+
+	<settings_maxinsectshive_desc>Max insects per queen: </settings_maxinsectshive_desc>
+	<settings_maxinsectshive_tip>This is the maximum number of insects allowed to spawn in a hive. Each queen manages its own hive.</settings_maxinsectshive_tip>
+
+	<settings_maxqueens_desc>Max queens: </settings_maxqueens_desc>
+	<settings_maxqueens_tip>This is the maximum number of queens per infestation.</settings_maxqueens_tip>
+
+	<settings_hiveaggression_desc>Hive aggression: </settings_hiveaggression_desc>
+	<settings_hiveaggression_tip>This setting determines how many insects become active to hunting, gathering, harvesting and sapper jobs when their food supply runs low.</settings_hiveaggression_tip>
+
+	<settings_hivedistance_desc>Hive distance from colony: </settings_hivedistance_desc>
+	<settings_hivedistance_tip>This settings determines how far away hives are allowed to spawn when an infestation incident begins. Each unit is a ByteGrid or around 3 cells wide.</settings_hivedistance_tip>
+
+	<settings_foodstorage_desc>Hive food storage: </settings_foodstorage_desc>
+	<settings_foodstorage_tip>Insects of this hive will perform hunting, gathering, harvesting and look for walls to breach if their food stocks fall under this value.</settings_foodstorage_tip>
+
+	<settings_egglayingrate_desc>Queen egg laying rate: </settings_egglayingrate_desc>
+	<settings_egglayingrate_tip>This setting determines the rate at which the queen spawns eggs.</settings_egglayingrate_tip>
+
+	<settings_egghatchingrate_desc>Egg hatching rate: </settings_egghatchingrate_desc>
+	<settings_egghatchingrate_tip>This setting determines the rate at which the eggs hatch.</settings_egghatchingrate_tip>
+
+	<settings_days_desc> Days</settings_days_desc>
+	<settings_targeting_desc>Targeting</settings_targeting_desc>
+	<settings_settings_desc>Settings</settings_settings_desc>
+	<settings_searchbyname_desc>Search by name...</settings_searchbyname_desc>
+	<settings_labelleft_desc>Insects will hunt or harvest these..</settings_labelleft_desc>
+	<settings_labelright_desc>.. and ignore these.</settings_labelright_desc>
+
+	<egg_foodneeded_desc>Food needed </egg_foodneeded_desc>
+	<egg_spawning_desc>Spawning insect </egg_spawning_desc>
+	<egg_debug_desc>DEBUG: Spawn insect</egg_debug_desc>
+	<butcher_converting_desc>converting TargetA to jelly.</butcher_converting_desc>
+	<queen_debug_desc>DEBUG: Spawn egg</queen_debug_desc>
+	<queen_debug_msg1_desc>No more eggs can spawn from this queen. Maximum insects allowed per hive: </queen_debug_msg1_desc>
+	<queen_debug_msg2_desc>No more eggs can spawn on this map. Maximum insects allowed per map: </queen_debug_msg2_desc>
+  	<letterlabelinfestation>Infestation</letterlabelinfestation>
+  	<lettertextinfestation>Giant insects are tunneling to the surface! They will break through in a few seconds and start spreading.\n\nIf you don't want the insects to infest the whole area, kill the queen. But beware - the bugs will defend her to the death.</lettertextinfestation>
+  	<letterlabeldeepdrillinfestation>Too deep: Infestation</letterlabeldeepdrillinfestation>
+  	<lettertextdeepdrillinfestation>Vibrations from your deep drills have stirred up some underground insects. Now they're tunneling up to the surface.\n\nBeware - the insects are a destructive species and will spread like crazy unless you do something to stop them.</lettertextdeepdrillinfestation>
+  	<letterlabelfoodinfestation>Bugs in the kitchen: Infestation</letterlabelfoodinfestation>
+  	<lettertextfoodinfestation>The insect population is spiraling out of control! Now they are tunneling towards our food supplies!\n\nWe must kill the pesty invaders and protect what is ours.\n\nDon't let them return to their hive, otherwise we will be besieged by bugs.</lettertextfoodinfestation>
+  	<letterlabelfoodinfestationsiege>Siege: Infestation</letterlabelfoodinfestationsiege>
+  	<lettertextfoodinfestationsiege>We have failed to wipe out the insects that were tunneling into our food supply. Now their entire hive is aware that there is a good source of food in this area.\n\nThey will continue to infest this place unless we manage to kill their queen.</lettertextfoodinfestationsiege>
+	
+</LanguageData>

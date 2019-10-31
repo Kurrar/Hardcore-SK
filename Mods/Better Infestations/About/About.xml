@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Better Infestations 1.0</name>
+	<author>Machine</author>
+	<supportedVersions>
+		<li>1.0</li>
+	</supportedVersions>
+	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=1319614331</url>
+	<description>This mod changes almost everything about infestations, the way they produce and insect behavior.
+
+UPDATE FOR RIMWORLD 1.0
+
+    * The mod has been completely overhauled, less harmony reliance
+    * Added insect Queens that produce eggs and manages the hive
+    * Hive ecosystems. Eggs require insect jelly to breed new insects, bugs gather resources to convert to jelly
+    * More insect factions! Watch them fight eachother for map control
+    * Smarter insect AI. They hunt, they gather, they harvest, they will even breach your walls to get to your food
+    * New infestation incident. If you let their population get out of control they will tunnel to your food stocks
+    * All settings now changeable in the mod settings menu, control how difficult you want them to be
+    * English language translation file included, if you create one for a different language let me know so I can upload it
+
+    Thanks for being patient, I know some of you waited awhile for this update to get done. Have fun!
+
+COMPATIBILITY
+
+    This mod will patch add thingclass to all the vanilla bugs. Other mods such as Animal Variety Coats do this too, make sure Better Infestations loads after them.
+
+    If adding this mod into a current save, you must get the mod Faction Discovery to load the new insect factions that come with this mod.
+	</description>
+</ModMetaData>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IncidentDef>
+    <defName>BI_Infestation</defName>
+    <label>infestation</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>BetterInfestations.IncidentWorker_Infestation</workerClass>
+    <baseChance>2</baseChance>
+    <minRefireDays>40</minRefireDays>
+    <category>ThreatBig</category>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>400</minThreatPoints>
+    <tale>Infestation</tale>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>BI_DeepDrillInfestation</defName>
+    <label>deep drill infestation</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+      <li>Map_TempIncident</li>
+      <li>Map_Misc</li>
+      <li>Map_RaidBeacon</li>
+    </targetTags>
+    <workerClass>BetterInfestations.IncidentWorker_DeepDrillInfestation</workerClass>
+    <baseChance>1</baseChance>
+    <category>DeepDrillInfestation</category>
+    <pointsScaleable>true</pointsScaleable>
+    <tale>Infestation</tale>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>BI_FoodInfestation</defName>
+    <label>food infestation</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>BetterInfestations.IncidentWorker_FoodInfestation</workerClass>
+    <baseChance>2</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <category>ThreatBig</category>
+    <tale>Infestation</tale>
+  </IncidentDef>
+
+</Defs>

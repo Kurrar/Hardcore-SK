@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <SoundDef>
+    <defName>BI_Laying_Egg</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>BI_Laying_Egg</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>21</min>
+          <max>21</max>
+        </volumeRange>
+        <pitchRange>
+          <min>1.2</min>
+          <max>1.3</max>
+        </pitchRange>
+        <distRange>
+          <min>0</min>
+          <max>70</max>
+        </distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

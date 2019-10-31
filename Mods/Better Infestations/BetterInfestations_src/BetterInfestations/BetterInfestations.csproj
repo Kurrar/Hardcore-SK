@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C54A8F39-CB8D-4218-B71A-2BA62EEA9A58}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BetterInfestations</RootNamespace>
+    <AssemblyName>BetterInfestations</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BetterInfestations.cs" />
+    <Compile Include="CompMaintainable.cs" />
+    <Compile Include="CompProperties_FilthSpawner.cs" />
+    <Compile Include="CompProperties_Maintainable.cs" />
+    <Compile Include="CompProperties_Spawner.cs" />
+    <Compile Include="CompProperties_InsectSpawner.cs" />
+    <Compile Include="CompSpawner.cs" />
+    <Compile Include="CompFilthSpawner.cs" />
+    <Compile Include="CompInsectSpawner.cs" />
+    <Compile Include="GenStep_CaveHives.cs" />
+    <Compile Include="HarmonyPatches.cs" />
+    <Compile Include="IncidentWorker_DeepDrillInfestation.cs" />
+    <Compile Include="IncidentWorker_FoodInfestation.cs" />
+    <Compile Include="JobDriver_Ingest.cs" />
+    <Compile Include="JobDriver_LayEgg.cs" />
+    <Compile Include="JobDriver_Maintain.cs" />
+    <Compile Include="JobGiver_FeedEgg.cs" />
+    <Compile Include="JobGiver_InsectAttack.cs" />
+    <Compile Include="HarvestHelper.cs" />
+    <Compile Include="JobGiver_MaintainEggs.cs" />
+    <Compile Include="JobGiver_QueenAttack.cs" />
+    <Compile Include="JobGiver_InsectSapper.cs" />
+    <Compile Include="JobGiver_GetFood.cs" />
+    <Compile Include="JobGiver_LayEgg.cs" />
+    <Compile Include="JobGiver_WanderQueen.cs" />
+    <Compile Include="Insect.cs" />
+    <Compile Include="LordJob_QueenKilled.cs" />
+    <Compile Include="LordToil_AssaultColony.cs" />
+    <Compile Include="Queen.cs" />
+    <Compile Include="HiveUtility.cs" />
+    <Compile Include="Egg.cs" />
+    <Compile Include="IncidentWorker_Infestation.cs" />
+    <Compile Include="InfestationCellFinder.cs" />
+    <Compile Include="JobDriver_HaulToCell.cs" />
+    <Compile Include="JobDriver_InsectButcher.cs" />
+    <Compile Include="JobDriver_InsectHarvest.cs" />
+    <Compile Include="JobGiver_InsectFightFire.cs" />
+    <Compile Include="JobGiver_HiveDefense.cs" />
+    <Compile Include="JobGiver_InsectGather.cs" />
+    <Compile Include="JobGiver_InsectHarvest.cs" />
+    <Compile Include="JobGiver_InsectHunt.cs" />
+    <Compile Include="JobGiver_InsectButcher.cs" />
+    <Compile Include="JobGiver_InsectRest.cs" />
+    <Compile Include="JobGiver_MineRandom.cs" />
+    <Compile Include="JobGiver_WanderHive.cs" />
+    <Compile Include="LordJob_DefendAndExpandHive.cs" />
+    <Compile Include="LordToil_DefendAndExpandHive.cs" />
+    <Compile Include="LordToil_HiveDefense.cs" />
+    <Compile Include="LordToil_QueenKilled.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TunnelMegascarabSpawner.cs" />
+    <Compile Include="TunnelQueenSpawner.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

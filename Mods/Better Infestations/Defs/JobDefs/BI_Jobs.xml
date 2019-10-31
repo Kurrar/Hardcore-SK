@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>BI_InsectButcher</defName>
+    <driverClass>BetterInfestations.JobDriver_InsectButcher</driverClass>
+    <reportString>butchering TargetA.</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>BI_InsectHarvest</defName>
+    <driverClass>BetterInfestations.JobDriver_InsectHarvest</driverClass>
+    <reportString>harvesting TargetA.</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>BI_HaulToCell</defName>
+    <driverClass>BetterInfestations.JobDriver_HaulToCell</driverClass>
+    <reportString>hauling TargetA.</reportString>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>BI_LayEgg</defName>
+    <driverClass>BetterInfestations.JobDriver_LayEgg</driverClass>
+    <reportString>laying egg.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>BI_Ingest</defName>
+    <driverClass>BetterInfestations.JobDriver_Ingest</driverClass>
+    <reportString>consuming TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>BI_Maintain</defName>
+    <driverClass>BetterInfestations.JobDriver_Maintain</driverClass>
+    <reportString>maintaining TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+
+</Defs>
