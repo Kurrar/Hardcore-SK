@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <aRandomKiwi_DFM_ForceDownLabel>行動不能(仮)</aRandomKiwi_DFM_ForceDownLabel>
+  <aRandomKiwi_DFM_ForceDownDesc>ポーンに行動不能の真似をさせます。</aRandomKiwi_DFM_ForceDownDesc>
+
+  <aRandomKiwi_DFM_ForceUndownLabel>行動不能(仮) 停止</aRandomKiwi_DFM_ForceUndownLabel>
+  <aRandomKiwi_DFM_ForceUndownDesc>ポーンが行動不能になった真似を停止させます。</aRandomKiwi_DFM_ForceUndownDesc>
+
+</LanguageData>

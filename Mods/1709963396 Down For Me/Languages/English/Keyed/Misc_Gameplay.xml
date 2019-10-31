@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<aRandomKiwi_DFM_ForceDownLabel>Fake down</aRandomKiwi_DFM_ForceDownLabel>
+	<aRandomKiwi_DFM_ForceDownDesc>Force the pawn to pretend being downed</aRandomKiwi_DFM_ForceDownDesc>
+	
+	<aRandomKiwi_DFM_ForceUndownLabel>Stop fake down</aRandomKiwi_DFM_ForceUndownLabel>
+	<aRandomKiwi_DFM_ForceUndownDesc>Stop force the pawn to pretend being downed</aRandomKiwi_DFM_ForceUndownDesc>
+</LanguageData>
