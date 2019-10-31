@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>AmmoUltratechMatterContainer</defName>
+      <label>ultratech matter container</label>
+      <parent>AmmoAdvanced</parent>
+      <iconPath>UI/Icons/ThingCategories/CaliberRocket</iconPath>
+    </ThingCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+	  <defName>UltratechMatterContainer_Havoc</defName>
+	  <label>.container havoc</label>
+	  <labelShort>Bio</labelShort>
+	  <description>Unloads in a heavy wave of toxcity on contact.</description>
+	  <advanced>true</advanced>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+	  <defName>UltratechMatterContainer_Frag</defName>
+	  <label>.container Frag</label>
+	  <labelShort>Frag</labelShort>
+	  <description>Unloads in a Frag detonation on contact.</description>
+	  <advanced>true</advanced>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+	  <defName>UltratechMatterContainer_Nitro</defName>
+	  <label>.container nitro</label>
+	  <labelShort>Nitro</labelShort>
+	  <description>A nitroglycerin mixture in very sensitive form encased by a complex pressure capsule.</description>
+	  <advanced>true</advanced>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+	  <defName>UltratechMatterContainer_Doom</defName>
+	  <label>.container doom</label>
+	  <labelShort>Doom</labelShort>
+	  <description>Contains anti-matter grains for mass destruction.</description>
+	  <advanced>true</advanced>
+	</CombatExtended.AmmoCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_UltratechMatterContainer</defName>
+		<label>ultratech matter container</label>
+		<ammoTypes>
+			<Ammo_UltratechMatterContainer_Havoc>Bullet_UltratechMatterContainer_Havoc</Ammo_UltratechMatterContainer_Havoc>
+			<Ammo_UltratechMatterContainer_Frag>Bullet_UltratechMatterContainer_Frag</Ammo_UltratechMatterContainer_Frag>
+			<Ammo_UltratechMatterContainer_Nitro>Bullet_UltratechMatterContainer_Nitro</Ammo_UltratechMatterContainer_Nitro>
+			<Ammo_UltratechMatterContainer_Doom>Bullet_UltratechMatterContainer_Doom</Ammo_UltratechMatterContainer_Doom>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+	<ThingDef Class="CombatExtended.AmmoDef" Name="AmmoUltratechMatterContainerBase" ParentName="SpacerSmallAmmoBase" Abstract="True">
+		<description>Ultratech matter container used by advanced cybernetic weapon systems.</description>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+    <stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>AmmoUltratechMatterContainer</li>
+		</thingCategories>
+		<cookOffFlashScale>60</cookOffFlashScale>
+		<cookOffSound>MortarBomb_Explode</cookOffSound>
+		<cookOffSpeed>1.0</cookOffSpeed>
+		<cookOffTailSound>ShellCookOff_Ambient</cookOffTailSound>
+	</ThingDef>
+  <!-- havoc -->
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoUltratechMatterContainerBase">
+		<defName>Ammo_UltratechMatterContainer_Havoc</defName>
+		<label>.container havoc</label>
+		<graphicData>
+			<texPath>Things/Ammo/RPG/HEAT</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>143.23</MarketValue>
+			<Mass>3.6</Mass>
+			<Bulk>3</Bulk>
+		</statBases>
+		<ammoClass>UltratechMatterContainer_Havoc</ammoClass>
+		<cookOffProjectile>Bullet_UltratechMatterContainer_Havoc</cookOffProjectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<explosionDamage>20</explosionDamage>
+				<explosionDamageDef>PrometheumFlame</explosionDamageDef>
+				<soundExplode>CW_FarExplosion</soundExplode>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<explosionRadius>1.9</explosionRadius>
+			</li>
+		</comps>
+	</ThingDef>
+  <!-- Frag -->
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoUltratechMatterContainerBase">
+		<defName>Ammo_UltratechMatterContainer_Frag</defName>
+		<label>.container Frag</label>
+		<graphicData>
+			<texPath>Things/Ammo/RPG/HEAT</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>183.23</MarketValue>
+			<Mass>3.5</Mass>
+			<Bulk>3</Bulk>
+		</statBases>
+		<ammoClass>UltratechMatterContainer_Frag</ammoClass>
+		<cookOffProjectile>Bullet_UltratechMatterContainer_Frag</cookOffProjectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<explosionDamage>20</explosionDamage>
+				<explosionDamageDef>PrometheumFlame</explosionDamageDef>
+				<soundExplode>Explosion_Flame</soundExplode>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>				
+				<explosionRadius>2.9</explosionRadius>
+				<fragRange>12</fragRange>
+				<fragments>
+					<Fragment_RocketFrag>30</Fragment_RocketFrag>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+  <!-- nitro -->
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoUltratechMatterContainerBase">
+		<defName>Ammo_UltratechMatterContainer_Nitro</defName>
+		<label>.container nitro</label>
+		<graphicData>
+			<texPath>Things/Ammo/RPG/HEAT</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>163.23</MarketValue>
+			<Mass>3.5</Mass>
+			<Bulk>3</Bulk>
+		</statBases>
+		<ammoClass>UltratechMatterContainer_Nitro</ammoClass>
+		<cookOffProjectile>Bullet_UltratechMatterContainer_Nitro</cookOffProjectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<explosionDamage>30</explosionDamage>
+				<explosionDamageDef>Thermobaric</explosionDamageDef>
+				<explosionRadius>2.9</explosionRadius>
+				<soundExplode>Explosion_Bomb</soundExplode>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
+	</ThingDef>
+  <!-- doom -->
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoUltratechMatterContainerBase">
+		<defName>Ammo_UltratechMatterContainer_Doom</defName>
+		<label>.container doom</label>
+		<graphicData>
+			<texPath>Things/Ammo/RPG/HEAT</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>203.23</MarketValue>
+			<Mass>3.9</Mass>
+			<Bulk>3.3</Bulk>
+		</statBases>
+		<ammoClass>UltratechMatterContainer_Doom</ammoClass>
+		<cookOffProjectile>Bullet_UltratechMatterContainer_Doom</cookOffProjectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<explosionDamage>40</explosionDamage>
+				<explosionDamageDef>CW_HavocBlaze</explosionDamageDef>
+				<explosionRadius>2.2</explosionRadius>
+				<fragRange>12</fragRange>
+				<soundExplode>Explosion_GiantBomb</soundExplode>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<fragments>
+					<Fragment_RocketFrag>100</Fragment_RocketFrag>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+  <!-- ==================== Projectiles ========================== -->
+ 
+	<ThingDef Name="BaseUltratechMatterContainer" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/HavocFireball</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>70</speed>
+			<soundAmbient>RocketPropelledLoop_Small</soundAmbient>
+		</projectile>
+	</ThingDef> 
+  
+  <!-- havoc -->
+   <ThingDef ParentName="BaseUltratechMatterContainer" >
+	<defName>Bullet_UltratechMatterContainer_Havoc</defName> 
+	<label>quantumbolt havoc</label>
+    <graphicData>
+      <texPath>Things/Projectile/HavocFireball</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>CW_HavocBlaze</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <explosionRadius>1.8</explosionRadius>
+	  <explosionChanceToStartFire>0.06</explosionChanceToStartFire>
+      <armorPenetrationBase>0.1</armorPenetrationBase>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>1</preExplosionSpawnChance>
+    </projectile>
+    <comps>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <explosionDamage>20</explosionDamage>
+        <explosionDamageDef>CW_HavocBlaze</explosionDamageDef>
+        <explosionRadius>1.75</explosionRadius>
+        <soundExplode>CW_FarExplosion</soundExplode>
+        <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>0.2</preExplosionSpawnChance>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      </li>
+    </comps>
+  </ThingDef>
+  <!-- Frag -->
+   <ThingDef ParentName="BaseUltratechMatterContainer" >
+	<defName>Bullet_UltratechMatterContainer_Frag</defName>  
+	<label>quantumbolt Frag</label>
+    <graphicData>
+      <texPath>Things/Projectile/HavocFireball</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <armorPenetrationBase>0.4</armorPenetrationBase>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <explosionChanceToStartFire>0.22</explosionChanceToStartFire>	  
+    </projectile>
+    <comps>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <explosionDamage>20</explosionDamage>
+        <explosionDamageDef>Bomb</explosionDamageDef>
+        <explosionRadius>1.75</explosionRadius>
+        <soundExplode>Explosion_Flame</soundExplode>
+        <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		<fragRange>11</fragRange>
+		<fragments>
+			<Fragment_RocketFrag>80</Fragment_RocketFrag>
+		</fragments>     
+	  </li>
+    </comps>
+  </ThingDef>
+  <!-- nitro -->
+   <ThingDef ParentName="BaseUltratechMatterContainer" >
+	<defName>Bullet_UltratechMatterContainer_Nitro</defName>  
+    <label>quantumbolt nitro</label>
+     <graphicData>
+      <texPath>Things/Projectile/HavocFireball</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>PrometheumFlame</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <armorPenetrationBase>0.01</armorPenetrationBase>
+      <preExplosionSpawnThingDef>Gas_Smoke</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>1</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <explosionChanceToStartFire>0.7</explosionChanceToStartFire>
+    </projectile>
+    <comps>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <explosionDamage>15</explosionDamage>
+        <explosionDamageDef>Thermobaric</explosionDamageDef>
+        <explosionRadius>1.75</explosionRadius>
+        <soundExplode>Explosion_Bomb</soundExplode>
+        <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>0.9</preExplosionSpawnChance>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      </li>
+    </comps>
+  </ThingDef>
+  <!-- doom -->
+   <ThingDef ParentName="BaseUltratechMatterContainer" >
+	<defName>Bullet_UltratechMatterContainer_Doom</defName>  
+    <label>quantumbolt doom</label>
+    <graphicData>
+      <texPath>Things/Projectile/HavocFireball</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Thermobaric</damageDef>
+      <damageAmountBase>85</damageAmountBase>
+	  <explosionRadius>3</explosionRadius>
+      <speed>60</speed>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <explosionChanceToStartFire>0.4</explosionChanceToStartFire>
+      <explosionEffect>GiantExplosion</explosionEffect>
+	  <armorPenetrationBase>1.2</armorPenetrationBase>
+    </projectile>
+    <comps>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <explosionDamage>40</explosionDamage>
+        <explosionDamageDef>CW_HavocBlaze</explosionDamageDef>
+        <explosionRadius>2.25</explosionRadius>
+        <soundExplode>Explosion_GiantBomb</soundExplode>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		<fragRange>15</fragRange>
+		<fragments>
+			<Fragment_RocketFrag>100</Fragment_RocketFrag>
+		</fragments>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ==================== Projectiles ========================== -->
+  <!-- havoc -->
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_UltratechMatterContainer_Havoc</defName>
+    <label>make havoc (Bio) container</label>
+    <description>Craft 25 ultratech substance container filled with liquid havoc for a mutli burst launcher.</description>
+    <jobString>Making havoc (Bio) container.</jobString>
+    <ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>SLDBar</li>
+				</categories>
+			</filter>
+			<count>20</count>
+		</li>
+		<li>
+			<filter>
+				<categories>
+					<li>USLDBar</li>
+				</categories>
+			</filter>
+			<count>20</count>
+		</li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+		<categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+		</categories>
+      <thingDefs>
+        <li>Neutroamine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_UltratechMatterContainer_Havoc>25</Ammo_UltratechMatterContainer_Havoc>
+    </products>
+  </RecipeDef>
+
+  <!-- Frag -->
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_UltratechMatterContainer_Frag</defName>
+    <label>make substance (Frag) container</label>
+    <description>Craft 25 ultratech substance container filled with liquid Frag for a mutli burst launcher.</description>
+    <jobString>Making substance (Frag) container.</jobString>
+    <ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>SLDBar</li>
+				</categories>
+			</filter>
+			<count>20</count>
+		</li>
+		<li>
+			<filter>
+				<categories>
+					<li>USLDBar</li>
+				</categories>
+			</filter>
+			<count>20</count>
+		</li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+		<categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+		</categories>
+      <thingDefs>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_UltratechMatterContainer_Frag>25</Ammo_UltratechMatterContainer_Frag>
+    </products>
+    <workAmount>5650</workAmount>
+  </RecipeDef>
+
+  <!-- nitro  -->
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_UltratechMatterContainer_Nitro</defName>
+    <label>make substance (Bio) container</label>
+    <description>Craft 25 ultratech substance container filled with liquid nitro for a mutli burst launcher.</description>
+    <jobString>Making substance (Bio) container.</jobString>
+    <ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>SLDBar</li>
+				</categories>
+			</filter>
+			<count>20</count>
+		</li>
+		<li>
+			<filter>
+				<categories>
+					<li>USLDBar</li>
+				</categories>
+			</filter>
+			<count>20</count>
+		</li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AlphaPoly</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+		<categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+		</categories>
+      <thingDefs>
+        <li>AlphaPoly</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_UltratechMatterContainer_Nitro>25</Ammo_UltratechMatterContainer_Nitro>
+    </products>
+  </RecipeDef>
+
+  <!-- doom -->
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_UltratechMatterContainer_Doom</defName>
+    <label>make anti-grain (Doom) container</label>
+    <description>Craft 25 ultratech anti-grain matter container for a mutli burst launcher.</description>
+    <jobString>Making anti-grain (Doom) container.</jobString>
+    <ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>SLDBar</li>
+				</categories>
+			</filter>
+			<count>20</count>
+		</li>
+		<li>
+			<filter>
+				<categories>
+					<li>USLDBar</li>
+				</categories>
+			</filter>
+			<count>20</count>
+		</li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Antimatter</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+		<categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+		</categories>
+      <thingDefs>
+        <li>Antimatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_UltratechMatterContainer_Doom>25</Ammo_UltratechMatterContainer_Doom>
+    </products>
+  </RecipeDef>
+
+</Defs>
