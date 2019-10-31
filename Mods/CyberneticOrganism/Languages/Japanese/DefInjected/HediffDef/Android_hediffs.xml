@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- ############## Zoom ############## -->
+
+  <Trunken_hediff_Zoom.label>ズームアイ</Trunken_hediff_Zoom.label>
+  <Trunken_hediff_Zoom.labelNoun>強化眼球</Trunken_hediff_Zoom.labelNoun>
+
+
+  <!-- ############## Black Pearl ############## -->
+
+  <Trunken_hediff_BlackPearl.label>ブラックパール</Trunken_hediff_BlackPearl.label>
+  <Trunken_hediff_BlackPearl.stages.Night_Vision.label>ナイトビジョン</Trunken_hediff_BlackPearl.stages.Night_Vision.label>
+  <Trunken_hediff_BlackPearl.labelNoun>ブラックアイ</Trunken_hediff_BlackPearl.labelNoun>
+
+
+  <!-- ############## Independent Eye ############## -->
+
+  <Trunken_hediff_IndependentEye.label>インディペンデントアイ</Trunken_hediff_IndependentEye.label>
+  <Trunken_hediff_IndependentEye.stages.Robot.label>ロボット</Trunken_hediff_IndependentEye.stages.Robot.label>
+  <Trunken_hediff_IndependentEye.labelNoun>ウルトラバイオレットアイ</Trunken_hediff_IndependentEye.labelNoun>
+
+
+  <!-- ############## Hover Feet ############## -->
+
+  <Trunken_hediff_HoverFeet.label>ホバーフット</Trunken_hediff_HoverFeet.label>
+  <Trunken_hediff_HoverFeet.stages.Robot.label>ロボット</Trunken_hediff_HoverFeet.stages.Robot.label>
+  <Trunken_hediff_HoverFeet.labelNoun>ホバーフット</Trunken_hediff_HoverFeet.labelNoun>
+
+
+  <!-- ############## Greenthumb ############## -->
+
+  <Trunken_hediff_Greenthumb.label>グリーンサム</Trunken_hediff_Greenthumb.label>
+  <Trunken_hediff_Greenthumb.labelNoun>強化手の親指</Trunken_hediff_Greenthumb.labelNoun>
+
+
+  <!-- ############## Compression Jaw ############## -->
+
+  <Trunken_hediff_CompressionJaw.label>コンプレッションジョー</Trunken_hediff_CompressionJaw.label>
+  <Trunken_hediff_CompressionJaw.labelNoun>油圧式顎</Trunken_hediff_CompressionJaw.labelNoun>
+
+
+  <!-- ############## Compression Stomach ############## -->
+
+  <Trunken_hediff_CompressionStomach.label>コンプレッションストマック</Trunken_hediff_CompressionStomach.label>
+  <Trunken_hediff_CompressionStomach.labelNoun>強化胃</Trunken_hediff_CompressionStomach.labelNoun>
+
+
+  <!-- ############## Energetic Lung ############## -->
+
+  <Trunken_hediff_EnergeticLung.label>エネルゲティックラング</Trunken_hediff_EnergeticLung.label>
+  <Trunken_hediff_EnergeticLung.labelNoun>強化肺</Trunken_hediff_EnergeticLung.labelNoun>
+
+
+  <!-- ############## Energetic Kidney ############## -->
+
+  <Trunken_hediff_EnergeticKidney.label>エネルゲティックキドニー</Trunken_hediff_EnergeticKidney.label>
+  <Trunken_hediff_EnergeticKidney.labelNoun>強化腎臓</Trunken_hediff_EnergeticKidney.labelNoun>
+
+
+</LanguageData>
