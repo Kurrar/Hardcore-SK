@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Down For Me</name>
+    <author>aRandomKiwi</author>
+	<supportedVersions>
+        <li>1.0</li>
+	</supportedVersions>
+    <description><![CDATA[
+Allow your pawn to pretend to be downed.
+
+No more wounded pawn with slow moving that will need too much time to reach nearest medical unit.
+Now you can set them down and take care of them, without having to punch them until they are knocked out ;)
+
+Version <color=#FFD800>1.0.3b</color> for Rimworld.
+]]>
+</description>
+
+</ModMetaData>
